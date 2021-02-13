@@ -15,8 +15,9 @@
 <script lang="ts">
 import Vue from 'vue';
 import { stringify } from 'qs';
-import { throttle } from 'lodash';
-// @ts-expect-error - This module doesn't have typings
+import throttle from 'lodash/throttle';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import muxjs from 'mux.js';
 import { mapActions, mapGetters, mapState } from 'vuex';
 import {
